@@ -1,0 +1,46 @@
+body{
+    overflow-x: hidden;
+}
+
+.card {
+    padding: 2rem;
+    margin: 0rem 2rem;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.card p {
+    font-size: large;
+}
+
+.card img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .card img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
